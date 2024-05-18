@@ -21,6 +21,9 @@ importers:
         specifier: ^8.4.0
         version: 8.4.0
     devDependencies:
+      '@types/node':
+        specifier: ^20.12.12
+        version: 20.12.12
       typescript:
         specifier: ^5.4.5
         version: 5.4.5
@@ -29,6 +32,9 @@ packages:
 
   '@mongodb-js/saslprep@1.1.7':
     resolution: {integrity: sha512-dCHW/oEX0KJ4NjDULBo3JiOaK5+6axtpBbS+ao2ZInoAL9/YRQLhXzSNAFz7hP4nzLkIqsfYAK/PDE3+XHny0Q==}
+
+  '@types/node@20.12.12':
+    resolution: {integrity: sha512-eWLDGF/FOSPtAvEqeRAQ4C8LSA7M1I7i0ky1I8U7kD1J5ITyW3AsRhQrKVoWf5pFKZ2kILsEGJhsI9r93PYnOw==}
 
   '@types/webidl-conversions@7.0.3':
     resolution: {integrity: sha512-CiJJvcRtIgzadHCYXw7dqEnMNRjhGZlYK05Mj9OyktqV8uVT8fD2BFOB7S1uwBE3Kj2Z+4UyPmFw/Ixgw/LAlA==}
@@ -365,6 +371,9 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
+  undici-types@5.26.5:
+    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
+
   unpipe@1.0.0:
     resolution: {integrity: sha512-pjy2bYhSsufwWlKwPc+l3cN7+wuJlK6uz0YdJEOlQDbl6jo/YlPi4mb8agUkVC8BF7V8NuzeyPNqRksA3hztKQ==}
     engines: {node: '>= 0.8'}
@@ -390,6 +399,10 @@ snapshots:
   '@mongodb-js/saslprep@1.1.7':
     dependencies:
       sparse-bitfield: 3.0.3
+
+  '@types/node@20.12.12':
+    dependencies:
+      undici-types: 5.26.5
 
   '@types/webidl-conversions@7.0.3': {}
 
@@ -741,6 +754,8 @@ snapshots:
       mime-types: 2.1.35
 
   typescript@5.4.5: {}
+
+  undici-types@5.26.5: {}
 
   unpipe@1.0.0: {}
 
