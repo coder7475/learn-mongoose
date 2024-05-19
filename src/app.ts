@@ -9,8 +9,9 @@ app.use(cors())
 
 app.get('/', (req: Request, res: Response) => {
   // const a = 10;
+
   res.send('Hello World!')
 })
 
 // console.log(process.cwd());
-export default app;
+export default app
