@@ -1,4 +1,3 @@
-import globals from 'globals';
 import pluginJs from '@eslint/js';
 import tseslint from 'typescript-eslint';
 import tsPlugin from '@typescript-eslint/eslint-plugin';
@@ -8,7 +7,10 @@ export default [
   {
     files: ['src/**/*.ts', 'src/**/*.tsx'],
     languageOptions: {
-      globals: globals.node,
+      // globals: globals.node,
+      globals: {
+        "process": "readonly"
+      },      
       // ecmaVersion: 'latest',
       sourceType: 'module',
       parser: tsParser,
@@ -27,6 +29,7 @@ export default [
       "no-console": "warn",
       "no-undef": "error"
     },
+    
   },
   {
     ignores: ["node_modules", "dist"]
