@@ -21,7 +21,10 @@ export default [
       '@typescript-eslint': tsPlugin,
     },
     rules: {
-      'no-unused-vars': 'warn',
+      'no-unused-vars': 'error',
+      'no-unused-expressions': 'error',
+      'prefer-const': "error",
+      "no-console": "warn"
     },
   },
   {
