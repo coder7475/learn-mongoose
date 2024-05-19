@@ -7,3 +7,4 @@ app.get('/', (req: Request, res: Response) => {
 })
 
 // console.log(process.cwd());
+export default app;
