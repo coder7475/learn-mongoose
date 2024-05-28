@@ -7,9 +7,14 @@ export default [
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
   {
+    files: ['src/**/*.ts'],
     rules: {
+      eqeqeq: 'error',
       'no-unused-vars': 'error',
       'no-undef': 'error',
+      'no-trailing-spaces': 'warn',
+      'no-console': 'warn',
+      'no-shadow': 'error',
     },
   },
 ];
